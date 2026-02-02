@@ -7,8 +7,10 @@ WORKDIR /app
 # 3. Copy only the requirements first (optimizes Docker caching)
 COPY requirements.txt .
 
-RUN  apt-get update -y
-RUN  pip install --no-cache-dir -r requirements.txt
+RUN apt-get update
+RUN apt-get upgrade -y
+RUN pip install --no-cache-dir -r requirements.txt
+RUN rm -rf /var/lib/apt/lists/*
 
 # 4. Install dependencies
 #RUN  pip install --upgrade pip \ 
