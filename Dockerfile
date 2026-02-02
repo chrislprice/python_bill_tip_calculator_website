@@ -9,7 +9,7 @@ COPY requirements.txt .
 
 # 4. Install dependencies
 RUN  python -m venv tutorial-env \ 
-     &&pip install --no-cache-dir -r requirements.txt \
+     && pip install --no-cache-dir -r requirements.txt \
      && pip install --upgrade pip \
      && sudo apt update -y \
      && sudo apt upgrade -y 
