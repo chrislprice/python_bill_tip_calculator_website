@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mywebsite-ui
+spec:
+  replicas: 3
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: mywebsite-ui
+  template:
+    metadata:
+      labels:
+        app: mywebsite-ui
+    spec:
+      containers:
+      - image: docker.io/chrislprice/harnesstestlab:1.0
+        name: mywebsite-ui
+        ports:
+        - containerPort: 80
+
+      
