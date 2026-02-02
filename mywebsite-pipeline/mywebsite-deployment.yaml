@@ -14,7 +14,7 @@ spec:
         app: mywebsite-ui
     spec:
       containers:
-      - image: docker.io/chrislprice/harnesstestlab:1.0
+      - image: chrislprice/harnesstestlab:latest
         name: mywebsite-ui
         ports:
         - containerPort: 80
