@@ -8,9 +8,8 @@ WORKDIR /app
 COPY requirements.txt .
 
 # 4. Install dependencies
-RUN  python -m venv tutorial-env \ 
+RUN  pip install --upgrade pip \ 
      && pip install --no-cache-dir -r requirements.txt \
-     && pip install --upgrade pip \
      && sudo apt update -y \
      && sudo apt upgrade -y 
 # 5. Copy the rest of your application code
