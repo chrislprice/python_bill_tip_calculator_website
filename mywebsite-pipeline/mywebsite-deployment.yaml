@@ -16,7 +16,6 @@ spec:
       containers:
       - image: chrislprice/harnesstestlab:latest
         name: mywebsite-ui
-        platform: arm64
         ports:
         - containerPort: 80
 
