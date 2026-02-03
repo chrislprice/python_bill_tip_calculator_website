@@ -1,5 +1,5 @@
 # 1. Use an official, small Python runtime as a parent image
-FROM python:3.12-slim
+FROM python:latest
 #FROM --platform=linux/arm64 python:3.11-slim
 
 
