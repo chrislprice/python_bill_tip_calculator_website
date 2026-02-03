@@ -15,6 +15,7 @@ spec:
     spec:
       containers:
       - image: chrislprice/harnesstestlab:latest
+        platform: linux/amd64
         name: mywebsite-ui
         ports:
         - containerPort: 80
