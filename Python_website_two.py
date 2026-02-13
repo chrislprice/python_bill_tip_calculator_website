@@ -9,7 +9,7 @@ HTML_TEMPLATE = """
 <body>
     <h2>Tip Calculator</h2>
     <form method="POST">
-        Enter Bill: $<input type="text" name="bill" required><br><br>
+        Enter Bill Amount: $<input type="text" name="bill" required><br><br>
         Enter Tip %: <input type="text" name="percentage" required><br>
         <button type="submit">Calculate</button>
     </form>
