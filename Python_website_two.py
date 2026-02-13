@@ -7,7 +7,7 @@ HTML_TEMPLATE = """
 <html>
 <head><title>Tip Calculator</title></head>
 <body>
-    <h2>💰 Tip Calculator</h2>
+    <h2>Tip Calculator</h2>
     <form method="POST">
         Enter Bill: $<input type="text" name="bill" required><br><br>
         Enter Tip %: <input type="text" name="percentage" required><br>
@@ -21,7 +21,7 @@ HTML_TEMPLATE = """
 """
 
 def calculate_total(bill, percentage):
-    return round(bill + (bill * (percentage / 100)), 2)
+    return float(bill + (bill * (percentage / 100)))
 
 @app.route("/", methods=["GET", "POST"])
 def home():
